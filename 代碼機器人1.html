@@ -1,0 +1,95 @@
+function setup() {
+  createCanvas(windowWidth, windowHeight); //產生一個畫布 寬為視窗的寬
+}
+
+function draw() {
+  background("#ffc8dd");
+  rectMode(CENTER) //設定rect方框指令 以中心點為座標點
+  //畫臉
+  fill("#bde0fe") //設定充滿顏色
+  stroke("#f7e1d7") //設定框線顏色
+  strokeWeight(6) //設定線條粗細 預設為1
+  rect(width/2,height/2,200) //在座標點為width/2,height/2 劃一個寬高維200方形
+  
+  //畫左眼
+  fill("#e7c6ff")
+ellipse(width/2-50,height/2-50,50)
+
+
+//畫左眼黑眼珠
+fill("#b8c0ff")
+ellipse(width/2-50,height/2-50,25)
+
+  //畫右眼
+  fill("#e7c6ff")
+  ellipse(width/2+50,height/2-50,50)
+
+  //畫右眼黑眼珠
+fill("#b8c0ff")
+ellipse(width/2+50,height/2-50,25)
+
+//畫嘴巴
+fill("#ccc5b9")
+rect(width/2,height/2+40,80,20)
+
+
+//畫天線
+stroke("#0a9396")
+strokeWeight(10)
+//line(width/2,height/2-100,width/2,height/2-150) //畫頭頂的直線
+line(width/2,height/2-100,width/2+50,height/2-130)
+line(width/2+50,height/2-130,width/2-50,height/2-130)
+line(width/2-50,height/2-130,width/2,height/2-170)
+}
+
+
+
+
+
+
+function setup() {
+  createCanvas(windowWidth, windowHeight); //產生一個畫布 寬為視窗的寬
+}
+
+function draw() {
+  background("#ffc8dd");
+  rectMode(CENTER) //設定rect方框指令 以中心點為座標點
+  x = mouseX  //把滑鼠的x軸座標的值存到x變數內
+  y = mouseY  //把滑鼠的y軸座標的值存到y變數內
+  //畫臉
+  fill("#bde0fe") //設定充滿顏色
+  stroke("#f7e1d7") //設定框線顏色
+  strokeWeight(6) //設定線條粗細 預設為1
+  rect(x,y,200) //在座標點為width/2,height/2 劃一個寬高維200方形
+  
+  //畫左眼
+  fill("#e7c6ff")
+ellipse(x-50,y-50,50)
+
+
+//畫左眼黑眼珠
+fill("#b8c0ff")
+ellipse(x-50,y-50,25)
+
+  //畫右眼
+  fill("#e7c6ff")
+  ellipse(x+50,y-50,50)
+
+  //畫右眼黑眼珠
+fill("#b8c0ff")
+ellipse(x+50,y-50,25)
+
+//畫嘴巴
+fill("#ccc5b9")
+rect(x,y+40,80,20)
+
+
+//畫天線
+stroke("#0a9396")
+strokeWeight(10)
+//line(width/2,height/2-100,width/2,height/2-150) //畫頭頂的直線
+line(x,y-100,x+50,y-130)
+line(x+50,y-130,x-50,y-130)
+line(x-50,y-130,x,y-170)
+}
+
